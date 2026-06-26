@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Developer Task Dashboard | Eno John</title>
+
+    <meta
+        name="description"
+        content="A responsive developer task dashboard built with HTML, CSS and JavaScript."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            Frontend Developer • HTML • CSS • JavaScript
+        </p>
+
+        <h1>
+            Developer Task Dashboard
+        </h1>
+
+        <p class="hero-text">
+            Track your learning, stay consistent, and celebrate every milestone.
+        </p>
+
+        <div class="progress-area">
+
+            <div class="progress-bar">
+                <div
+                    class="progress-fill"
+                    id="progressFill"
+                ></div>
+            </div>
+
+            <p id="progressText">
+                0 of 4 tasks completed
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+
+    <section class="dashboard-overview">
+
+        <div class="stat-card">
+
+            <h3>📈 Progress</h3>
+
+            <p id="progressPercent">0%</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>✅ Completed</h3>
+
+            <p id="completedTasks">0</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>⏳ Remaining</h3>
+
+            <p id="remainingTasks">4</p>
+
+        </div>
+
+    </section>
+
+    <!-- Weekly Tasks -->
+
+    <section class="tasks">
+
+        <h2>This Week's Goals</h2>
+
+        <div class="task-card" id="card1">
+
+            <div class="task-top">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="task-check"
+                    >
+
+                    <span>
+                        Complete the Frontend Mentor Recipe Page
+                    </span>
+
+                </label>
+
+                <span class="badge html">
+                    HTML
+                </span>
+
+            </div>
+
+            <a
+                href="https://frontendmentor.io/challenges"
+                target="_blank"
+            >
+                Browse Frontend Mentor →
+            </a>
+
+        </div>
+
+        <div class="task-card" id="card2">
+
+            <div class="task-top">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="task-check"
+                    >
+
+                    <span>
+                        Master CSS Grid Layouts
+                    </span>
+
+                </label>
+
+                <span class="badge css">
+                    CSS
+                </span>
+
+            </div>
+
+            <a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                target="_blank"
+            >
+                Read CSS Grid Guide →
+            </a>
+
+        </div>
+
+        <div class="task-card" id="card3">
+
+            <div class="task-top">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="task-check"
+                    >
+
+                    <span>
+                        Push Projects to GitHub
+                    </span>
+
+                </label>
+
+                <span class="badge git">
+                    Git
+                </span>
+
+            </div>
+
+            <a
+                href="https://github.com"
+                target="_blank"
+            >
+                Open GitHub →
+            </a>
+
+        </div>
+
+        <div class="task-card" id="card4">
+
+            <div class="task-top">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="task-check"
+                    >
+
+                    <span>
+                        Share Progress on LinkedIn & X
+                    </span>
+
+                </label>
+
+                <span class="badge share">
+                    Share
+                </span>
+
+            </div>
+
+            <a
+                href="https://linkedin.com"
+                target="_blank"
+            >
+                Share your progress →
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        Built with ❤️ by <strong>Eno John</strong>
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
